@@ -9,3 +9,14 @@ D:\MultiStoryMultiElivator\MultiStoryMultiElivator\bin\Debug\netcoreapp2.1\Multi
 D:\MultiStoryMultiElivator\MultiStoryMultiElivator\bin\Debug\netcoreapp2.1\MultiStoryMultiElivator.pdb
 D:\MultiStoryMultiElivator\MultiStoryMultiElivator\obj\Debug\netcoreapp2.1\MultiStoryMultiElivator.dll
 D:\MultiStoryMultiElivator\MultiStoryMultiElivator\obj\Debug\netcoreapp2.1\MultiStoryMultiElivator.pdb
+D:\MultiStoryMultiElivator\MultiStoryMultiList\MultiStoryMultiElivator\obj\Debug\netcoreapp2.1\MultiStoryMultiElivator.csprojAssemblyReference.cache
+D:\MultiStoryMultiElivator\MultiStoryMultiList\MultiStoryMultiElivator\obj\Debug\netcoreapp2.1\MultiStoryMultiElivator.csproj.CoreCompileInputs.cache
+D:\MultiStoryMultiElivator\MultiStoryMultiList\MultiStoryMultiElivator\obj\Debug\netcoreapp2.1\MultiStoryMultiElivator.AssemblyInfoInputs.cache
+D:\MultiStoryMultiElivator\MultiStoryMultiList\MultiStoryMultiElivator\obj\Debug\netcoreapp2.1\MultiStoryMultiElivator.AssemblyInfo.cs
+D:\MultiStoryMultiElivator\MultiStoryMultiList\MultiStoryMultiElivator\obj\Debug\netcoreapp2.1\MultiStoryMultiElivator.dll
+D:\MultiStoryMultiElivator\MultiStoryMultiList\MultiStoryMultiElivator\obj\Debug\netcoreapp2.1\MultiStoryMultiElivator.pdb
+D:\MultiStoryMultiElivator\MultiStoryMultiList\MultiStoryMultiElivator\bin\Debug\netcoreapp2.1\MultiStoryMultiElivator.deps.json
+D:\MultiStoryMultiElivator\MultiStoryMultiList\MultiStoryMultiElivator\bin\Debug\netcoreapp2.1\MultiStoryMultiElivator.runtimeconfig.json
+D:\MultiStoryMultiElivator\MultiStoryMultiList\MultiStoryMultiElivator\bin\Debug\netcoreapp2.1\MultiStoryMultiElivator.runtimeconfig.dev.json
+D:\MultiStoryMultiElivator\MultiStoryMultiList\MultiStoryMultiElivator\bin\Debug\netcoreapp2.1\MultiStoryMultiElivator.dll
+D:\MultiStoryMultiElivator\MultiStoryMultiList\MultiStoryMultiElivator\bin\Debug\netcoreapp2.1\MultiStoryMultiElivator.pdb

@@ -4,8 +4,8 @@ using System.Text;
 using MultiStoryMultiElivator.Models;
 namespace MultiStoryMultiElivator.Services
 {
-    interface IElevatorService
+    public interface IElevatorService
     {
-        float? TimetoReachDestinationFloor(Elevator elevator, Floor Destination);
+        int? TimetoReachDestinationFloor(Elevator elevator, Floor CurrentFloor,Floor Destination);
     }
 }

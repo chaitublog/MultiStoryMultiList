@@ -1,0 +1,14 @@
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\bin\Debug\netcoreapp2.1\MultistoryEf.deps.json
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\bin\Debug\netcoreapp2.1\MultistoryEf.runtimeconfig.json
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\bin\Debug\netcoreapp2.1\MultistoryEf.runtimeconfig.dev.json
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\bin\Debug\netcoreapp2.1\MultistoryEf.dll
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\bin\Debug\netcoreapp2.1\MultistoryEf.pdb
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\bin\Debug\netcoreapp2.1\MultiStoryEf.Calc.dll
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\bin\Debug\netcoreapp2.1\MultiStoryEf.Calc.pdb
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\obj\Debug\netcoreapp2.1\MultistoryEf.csprojAssemblyReference.cache
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\obj\Debug\netcoreapp2.1\MultistoryEf.csproj.CoreCompileInputs.cache
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\obj\Debug\netcoreapp2.1\MultistoryEf.AssemblyInfoInputs.cache
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\obj\Debug\netcoreapp2.1\MultistoryEf.AssemblyInfo.cs
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\obj\Debug\netcoreapp2.1\MultistoryEf.csproj.CopyComplete
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\obj\Debug\netcoreapp2.1\MultistoryEf.dll
+D:\MultiStoryMultiElivator\MultistoryEf\MultistoryEf\obj\Debug\netcoreapp2.1\MultistoryEf.pdb

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "MultistoryEf/1.0.0": {
+        "dependencies": {
+          "MultiStoryEf.Calc": "1.0.0"
+        },
+        "runtime": {
+          "MultistoryEf.dll": {}
+        }
+      },
+      "MultiStoryEf.Calc/1.0.0": {
+        "runtime": {
+          "MultiStoryEf.Calc.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MultistoryEf/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MultiStoryEf.Calc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

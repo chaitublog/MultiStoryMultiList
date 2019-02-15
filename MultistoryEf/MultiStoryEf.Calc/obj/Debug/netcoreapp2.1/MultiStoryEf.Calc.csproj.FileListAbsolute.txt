@@ -1,0 +1,9 @@
+D:\MultiStoryMultiElivator\MultistoryEf\MultiStoryEf.Calc\bin\Debug\netcoreapp2.1\MultiStoryEf.Calc.deps.json
+D:\MultiStoryMultiElivator\MultistoryEf\MultiStoryEf.Calc\bin\Debug\netcoreapp2.1\MultiStoryEf.Calc.dll
+D:\MultiStoryMultiElivator\MultistoryEf\MultiStoryEf.Calc\bin\Debug\netcoreapp2.1\MultiStoryEf.Calc.pdb
+D:\MultiStoryMultiElivator\MultistoryEf\MultiStoryEf.Calc\obj\Debug\netcoreapp2.1\MultiStoryEf.Calc.csproj.CoreCompileInputs.cache
+D:\MultiStoryMultiElivator\MultistoryEf\MultiStoryEf.Calc\obj\Debug\netcoreapp2.1\MultiStoryEf.Calc.AssemblyInfoInputs.cache
+D:\MultiStoryMultiElivator\MultistoryEf\MultiStoryEf.Calc\obj\Debug\netcoreapp2.1\MultiStoryEf.Calc.AssemblyInfo.cs
+D:\MultiStoryMultiElivator\MultistoryEf\MultiStoryEf.Calc\obj\Debug\netcoreapp2.1\MultiStoryEf.Calc.dll
+D:\MultiStoryMultiElivator\MultistoryEf\MultiStoryEf.Calc\obj\Debug\netcoreapp2.1\MultiStoryEf.Calc.pdb
+D:\MultiStoryMultiElivator\MultistoryEf\MultiStoryEf.Calc\obj\Debug\netcoreapp2.1\MultiStoryEf.Calc.csprojAssemblyReference.cache

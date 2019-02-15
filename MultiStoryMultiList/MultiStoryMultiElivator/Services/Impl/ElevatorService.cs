@@ -10,26 +10,41 @@ namespace MultiStoryMultiElivator.Services
     class ElevatorService:IElevatorService
     {
      int TravelTimebwFloor = 3;
-     int AvgStopTime = 5;
-      public  float? TimetoReachDestinationFloor(Elevator elevator,Floor Destination)
-      {
-            if(elevator.Status != ElevatorStatus.LONGSTOP)
+     int AvgStopTime = 6;
+
+     public  int? TimetoReachDestinationFloor(Elevator elevator,Floor CurrentFloor, Floor Destination)
+     {
+            ElevatorStatus userStatus = CurrentFloor.FloorNum > Destination.FloorNum ? ElevatorStatus.DOWN : ElevatorStatus.UP;
+
+            if (elevator.Status != ElevatorStatus.LONGSTOP)
             {
-                if (elevator.Status == ElevatorStatus.DOWN && Destination.FloorNum < elevator.CurrentFloor)
+
+                if(elevator.Status == userStatus && ((elevator.Status == ElevatorStatus.UP && elevator.CurrentFloor.FloorNum < CurrentFloor.FloorNum) || (elevator.Status == ElevatorStatus.DOWN && elevator.CurrentFloor.FloorNum > CurrentFloor.FloorNum)))
                 {
-                  return  (Destination.FloorNum - elevator.CurrentFloor) + elevator.Stops.Count * AvgStopTime;
+                    return 0;
                 }
-                else if (elevator.Status == ElevatorStatus.DOWN && Destination.FloorNum > elevator.CurrentFloor)
+
+                if (elevator.Status == ElevatorStatus.DOWN && Destination.FloorNum < elevator.CurrentFloor.FloorNum)
                 {
-                    return  (elevator.CurrentFloor - elevator.Stops.Min())* TravelTimebwFloor + (Destination.FloorNum -elevator.Stops.Min())* TravelTimebwFloor + elevator.Stops.Count * AvgStopTime;
+                    return Math.Abs(Destination.FloorNum - elevator.CurrentFloor.FloorNum) * TravelTimebwFloor + (elevator.DownStops.Where(d => d < elevator.CurrentFloor.FloorNum && d > Destination.FloorNum)).Count() * AvgStopTime;
                 }
-                else if (elevator.Status == ElevatorStatus.UP && Destination.FloorNum > elevator.CurrentFloor)
+                else if (elevator.Status == ElevatorStatus.DOWN && Destination.FloorNum > elevator.CurrentFloor.FloorNum)
                 {
-                    return  (Destination.FloorNum - elevator.CurrentFloor) * TravelTimebwFloor + elevator.Stops.Count * AvgStopTime;
+                    return (elevator.CurrentFloor.FloorNum - (elevator.DownStops.Count > 0 ? elevator.DownStops.Min() : elevator.CurrentFloor.FloorNum)) * TravelTimebwFloor + (Destination.FloorNum - (elevator.DownStops.Count() > 0 ? elevator.DownStops.Min() : elevator.CurrentFloor.FloorNum)) * TravelTimebwFloor
+                             + elevator.DownStops.Count * AvgStopTime + elevator.UpStops.Where(u => u < Destination.FloorNum).Count() * AvgStopTime;
                 }
-                else if (elevator.Status == ElevatorStatus.UP && Destination.FloorNum < elevator.CurrentFloor)
+                else if (elevator.Status == ElevatorStatus.UP && Destination.FloorNum > elevator.CurrentFloor.FloorNum)
                 {
-                    return (elevator.Stops.Max() - elevator.CurrentFloor) * TravelTimebwFloor + (elevator.Stops.Max()-Destination.FloorNum) * TravelTimebwFloor + elevator.Stops.Count * AvgStopTime;
+                    return Math.Abs(Destination.FloorNum - elevator.CurrentFloor.FloorNum) * TravelTimebwFloor + (elevator.UpStops.Where(d => d > elevator.CurrentFloor.FloorNum && d < Destination.FloorNum)).Count() * AvgStopTime;
+                }
+                else if (elevator.Status == ElevatorStatus.UP && Destination.FloorNum < elevator.CurrentFloor.FloorNum)
+                {
+                    return (elevator.UpStops != null ? elevator.UpStops.Max() : elevator.CurrentFloor.FloorNum - elevator.CurrentFloor.FloorNum) * TravelTimebwFloor + (elevator.UpStops.Max() - Destination.FloorNum) * TravelTimebwFloor + 
+                        + elevator.UpStops.Count * AvgStopTime + elevator.DownStops.Where(u => u > Destination.FloorNum).Count() * AvgStopTime;
+                }
+                else if(elevator.Status == ElevatorStatus.STOP)
+                {
+                    return (Math.Abs(elevator.CurrentFloor.FloorNum - CurrentFloor.FloorNum) + Math.Abs(CurrentFloor.FloorNum - Destination.FloorNum)) * TravelTimebwFloor;
                 }
                 else
                 {
@@ -44,6 +59,8 @@ namespace MultiStoryMultiElivator.Services
             
 
       }
+
+        
 
     }
 }

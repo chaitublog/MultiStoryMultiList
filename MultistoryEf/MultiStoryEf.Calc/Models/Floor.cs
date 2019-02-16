@@ -15,6 +15,7 @@ namespace MultiStoryEf.Calc.Models
         public int FloorNum { get; set; }
 
        
+
         private ObservableCollection<Elevator> _elevators;
 
         public ObservableCollection<Elevator> elevators
@@ -54,6 +55,23 @@ namespace MultiStoryEf.Calc.Models
         private void collectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             e.Action.ToString();
+
+        }
+
+        public List<ValidationResult> ValidateFloor()
+        {
+            bool validateAllProperties = false;
+
+            var results = new List<ValidationResult>();
+            var destRes = new List<ValidationResult>();
+
+            bool isValid = Validator.TryValidateObject(this,
+                                                        new ValidationContext(this, null, null),
+                                                        results,
+                                                        validateAllProperties);
+
+
+            return results;
 
         }
 

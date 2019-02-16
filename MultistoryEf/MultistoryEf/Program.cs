@@ -9,6 +9,7 @@ namespace MultistoryEf
     {
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Start.. ");
             ElevatorManager elevatorManager = new ElevatorManager();
             Elevator ele=  elevatorManager.getElevatorToUserFloor(0,ElevatorStatus.UP);
@@ -28,7 +29,7 @@ namespace MultistoryEf
             elevatorManager.traveltoDestFloor(6, 4, ele);
             Console.WriteLine(" ");
 
-            elevatorManager.SetLongStop(2);
+            elevatorManager.SetElevatorToLongStop(2);
 
             Console.WriteLine("Travel from 0 to -2 floor");
             ele = elevatorManager.getElevatorToUserFloor(0, ElevatorStatus.DOWN);
@@ -46,6 +47,8 @@ namespace MultistoryEf
             elevatorManager.Display();
 
             Console.WriteLine("Completed.. ");
+            
+            
             Console.ReadLine();
         }
     }

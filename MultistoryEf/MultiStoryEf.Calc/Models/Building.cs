@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace MultiStoryEf.Calc.Models
@@ -9,28 +10,17 @@ namespace MultiStoryEf.Calc.Models
         int NumFloors = 10;
         int NumBasemennts = 2;
         public Floor elevatorFloor { get; set; }
+        public List<Floor> floors = null;
         public Building()
         {
-
-        }
-
-        private List<Floor> _floors = new List<Floor>();
-        public List<Floor> floors
-        {
-            get
-            {
-                //_floors.Clear();
-                if (_floors.Count == 0)
+            floors = new List<Floor>();
+                for (int bs = -(NumBasemennts); bs < NumFloors + Math.Abs(NumBasemennts) - 1; bs++)
                 {
-                    for (int bs = -(NumBasemennts); bs < NumFloors + Math.Abs(NumBasemennts) - 1; bs++)
-                    {
-                        _floors.Add(new Floor(bs));
-                    }
+                    floors.Add(new Floor(bs));
                 }
-                return this._floors;
-            }
-
-
         }
+        public ObservableCollection<Elevator> NotUsedElevators = new ObservableCollection<Elevator>();
+       
+        
     }
 }

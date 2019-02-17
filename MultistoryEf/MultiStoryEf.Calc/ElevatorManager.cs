@@ -12,15 +12,20 @@ using MultiStoryEf.Calc.Service;
 
 namespace MultiStoryEf.Calc
 {
-    public class ElevatorManager
+    public sealed class ElevatorManager
     {
         Building building = new Building();
         private int NumOfElevators = 3;
         Elevator[] elevators = new Elevator[3];
-
+        
         IElevatorService _Elevatorservice;
 
-        public ElevatorManager()
+        private static readonly Lazy<ElevatorManager> _elevatorManager =
+        new Lazy<ElevatorManager>(() => new ElevatorManager());
+
+        public static ElevatorManager getEleManager { get { return _elevatorManager.Value; } }
+
+        private ElevatorManager()
         {
             this._Elevatorservice = new ElevatorService(building);
 

@@ -11,7 +11,8 @@ namespace MultistoryEf
         {
             
             Console.WriteLine("Start.. ");
-            ElevatorManager elevatorManager = new ElevatorManager();
+            ElevatorManager elevatorManager = ElevatorManager.getEleManager;
+           
             Elevator ele=  elevatorManager.getElevatorToUserFloor(0,ElevatorStatus.UP);
             Console.WriteLine("Travel from 0 to 7 floor");
             elevatorManager.traveltoDestFloor(0, 7, ele);
